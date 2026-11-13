@@ -25,7 +25,7 @@ Issues = "https://github.com/Maxi-online/lidar-vehicle-perception/issues"
 lidar-perception = "lidar_vehicle_perception.cli:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=8,<10", "build>=1.2,<2", "ruff>=0.9,<1"]
+dev = ["pytest>=8,<10", "build>=1.2,<2", "ruff>=0.9,<1", "PyYAML>=6.0.2,<7", "tomli>=2,<3; python_version < '3.11'"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}

@@ -11,7 +11,10 @@ from pathlib import Path
 import re
 import subprocess
 import sys
-import tomllib
+try:
+    import tomllib
+except ImportError:
+    import tomli as tomllib
 import xml.etree.ElementTree as ET
 from urllib.parse import urlsplit
 import yaml
