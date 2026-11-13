@@ -1,0 +1,24 @@
+{
+  "metric": "axis-aligned BEV IoU",
+  "iou_threshold": 0.3,
+  "frames": 12,
+  "true_positives": 24,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "dimension_mae_m_lwh": [
+    0.041114369902995496,
+    0.03904802603891011,
+    0.10854025619725398
+  ],
+  "observed_track_matches": 20,
+  "identity_switches_on_matched_tracks": 0,
+  "limitations": "Synthetic demo or caller-supplied labels only. AABB-BEV is not oriented 3D IoU; ID-switch count is not a complete MOT benchmark. Class labels are not scored.",
+  "dataset": {
+    "kind": "procedural synthetic cuboids",
+    "seed": 42,
+    "real_world_validation": false
+  }
+}

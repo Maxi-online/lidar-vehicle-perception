@@ -1,0 +1,13 @@
+.git
+.venv
+artifacts
+data
+snapshot*
+dist
+build
+*.log
+__pycache__
+.pytest_cache
+.ruff_cache
+docs
+tests
