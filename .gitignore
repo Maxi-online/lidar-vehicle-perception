@@ -27,3 +27,20 @@ snapshot*/
 .playwright-cli/
 output/
 .DS_Store
+
+# Private runtime files
+.env
+.env.*
+!.env.example
+!.env.template
+settings_secret.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.local.json
+*.local.yaml
+*.log
+*.sqlite
+*.sqlite3
+*.dump

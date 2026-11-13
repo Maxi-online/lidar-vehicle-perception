@@ -155,3 +155,11 @@ MIT © 2026 Maxi-online. Source datasets, thermal recordings, binaries and model
 weights are not distributed. Open3D, HDBSCAN, NumPy, SciPy, FilterPy, Plotly and
 their dependencies retain their own licenses. This project integrates established
 algorithms; it makes no novel-model or state-of-the-art performance claim.
+
+## Конфигурация, приватность и воспроизведение
+
+Офлайн-демонстрация использует процедурные облака точек и не требует облачных AI-ключей. Реальные PCD/ROS bags могут содержать маршруты и метаданные объекта съёмки; держите их вне Git, пока не подготовлены права и обезличенный набор. Метрики синтетического примера и real-PCD smoke check не являются оценкой качества на дорожном датасете.
+
+Секреты храните в игнорируемых локальных файлах или переменных окружения. Безопасные примеры содержат только структуру настройки. Не передавайте секреты в командной строке и не добавляйте заполненные `.env`, приватные ключи, базы данных и логи в коммиты.
+
+Workflow [Secret scan](.github/workflows/secret-scan.yml) проверяет текущие файлы и входящие коммиты Gitleaks 8.30.1 с редактированием значений в выводе. Это проверка на известные шаблоны, а не подтверждение отсутствия всех возможных утечек. Удаление значения из HEAD не очищает старую историю; порядок действий описан в [SECURITY.md](SECURITY.md).
