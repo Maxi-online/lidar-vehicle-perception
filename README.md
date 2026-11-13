@@ -156,10 +156,10 @@ weights are not distributed. Open3D, HDBSCAN, NumPy, SciPy, FilterPy, Plotly and
 their dependencies retain their own licenses. This project integrates established
 algorithms; it makes no novel-model or state-of-the-art performance claim.
 
-## Конфигурация, приватность и воспроизведение
+## Configuration, privacy and reproducibility
 
-Офлайн-демонстрация использует процедурные облака точек и не требует облачных AI-ключей. Реальные PCD/ROS bags могут содержать маршруты и метаданные объекта съёмки; держите их вне Git, пока не подготовлены права и обезличенный набор. Метрики синтетического примера и real-PCD smoke check не являются оценкой качества на дорожном датасете.
+The offline demonstration uses procedural point clouds and requires no cloud AI credentials. Real PCD files and ROS bags can contain routes and acquisition metadata; keep them outside Git until publication rights and an anonymized dataset are established. Synthetic replay metrics and a real-PCD smoke check are not a road-dataset accuracy evaluation.
 
-Секреты храните в игнорируемых локальных файлах или переменных окружения. Безопасные примеры содержат только структуру настройки. Не передавайте секреты в командной строке и не добавляйте заполненные `.env`, приватные ключи, базы данных и логи в коммиты.
+Keep credentials in ignored local files or environment variables. Configuration examples contain structure only. Avoid passing secrets on the command line or committing populated `.env` files, private keys, databases or logs.
 
-Workflow [Secret scan](.github/workflows/secret-scan.yml) проверяет текущие файлы и входящие коммиты Gitleaks 8.30.1 с редактированием значений в выводе. Это проверка на известные шаблоны, а не подтверждение отсутствия всех возможных утечек. Удаление значения из HEAD не очищает старую историю; порядок действий описан в [SECURITY.md](SECURITY.md).
+The [Secret scan](.github/workflows/secret-scan.yml) workflow scans current files and incoming commits with Gitleaks 8.30.1 and redacts matched values. Pattern scanning cannot prove that every possible disclosure is absent. Removing a value from HEAD does not clean older history; see [SECURITY.md](SECURITY.md) for incident handling.
