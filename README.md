@@ -7,7 +7,7 @@
 Headless offline replay, an optional ROS 2 adapter, reproducible procedural data,
 layout-aware PointCloud2 decoding and a matching-based evaluation baseline.
 
-[Описание на русском](README.ru.md) · [Architecture](docs/architecture.md) ·
+[Description in Russian](docs/legacy-quickstart.md) · [Architecture](docs/architecture.md)) ·
 [Evaluation](docs/evaluation.md) · [ROS 2](docs/ros2.md) · [Provenance](docs/provenance.md)
 
 ![Actual pipeline output on a procedural synthetic sequence](docs/demo.png)
